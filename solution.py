@@ -9,5 +9,6 @@ def solution(x: np.array) -> float:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    t = 4
-    return np.exp(- np.sqrt( np.mean(x) / t))
+    total_lamps = np.sum(x)
+    lambda_ = total_lamps / (len(x) * 4)
+    return lambda_
